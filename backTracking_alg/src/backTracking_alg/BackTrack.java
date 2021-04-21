@@ -26,7 +26,7 @@ public class BackTrack {
 
 
 	public static void main(String[] args) {
-		Puzzle puzzle= new Puzzle("to", "to", "fao", 6);
+		Puzzle puzzle= new Puzzle(args[0], args[1], args[2], Integer.parseInt(args[3]));
 		BackTrack bt=new BackTrack(puzzle);
 		bt.ExhaustiveSolve(bt.unusedDigits);
 		bt.printSolution();
